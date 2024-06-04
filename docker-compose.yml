@@ -61,7 +61,7 @@ services:
     volumes:
       - mmdvmhost:/MMDVMHost:ro
       - ./config:/config:ro
-      - ./config/config.php:/var/www/html/config/config.php
+      - ./config/config.php:/www/wwwroot/mmdvm/config/config.php
       - log-mmdvm:/var/log/mmdvm:ro
       - log-YSFGateway:/var/log/YSFGateway:ro
     pid: host
